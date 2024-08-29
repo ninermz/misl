@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../web/css/style.css">
+    <link rel="stylesheet" href="../web/css/style2.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a class="logo" href="#">
+                <img src="../web/images/svg/logo.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a href="lessons.html" class="menu__link">Уроки</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link"> <span>Форум</span> </a>
+                </li>
+                <li class="menu__list">
+                    <a href="aboutUs.html" class="menu__link">О нас</a>
+                </li>
+            </ul>
+            <a class="account account--on" href="">
+                <img src="../web/images/svg/account.svg" alt="">
+                <span>1</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- АКАУНТ -->
+<main class="main">
+    <section class="account__top">
+        <div class="user-info">
+            <div class="user-info-top">
+                <div class="account-img">
+                    <img class="acc-img" src="../web/images/accountStab.png" alt="">
+                </div>
+                <h2>username</h2>
+                <a href="#">
+                    <img class="acc-edit" src="../web/images/svg/pen.svg" alt="Edit">
+                </a>
+            </div>
+        </div>
+        <div class="account-exit">
+            <a href="#">
+                <img class="acc-exit" src="../web/images/svg/logout.svg" alt="Logout">
+            </a>
+        </div>
+    </section>
+    <div class="acc-top-border"></div>
+
+    <section class="account__main">
+        <!-- Аккордеон -->
+        <div class="accordion">
+            <!-- Закладки -->
+            <div class="tab">
+                <input type="checkbox" id="tab1" class="tab-input">
+                <label for="tab1" class="tab-label">Закладки</label>
+                <div class="tab-content">
+                    <!-- Содержимое закладок -->
+                </div>
+            </div>
+            <!-- Понравившееся -->
+            <div class="tab">
+                <input type="checkbox" id="tab2" class="tab-input">
+                <label for="tab2" class="tab-label">Понравившееся</label>
+                <div class="tab-content">
+                    <!-- Содержимое понравившегося -->
+                </div>
+            </div>
+        </div>
+        <!-- Конец аккордеона -->
+    </section>
+</main>   
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Главная</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Уроки</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Форум</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">О нас</a>
+                </li>
+            </ul>
+            <div class="footer__contacts">
+                <a class="contact__youtube" href="#">
+                    <img src="../web/images/svg/youtube.svg" alt="">
+                </a>
+                <a class="contact__vk" href="#">
+                    <img src="../web/images/svg/vk.svg" alt="">
+                </a>
+            </div>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>

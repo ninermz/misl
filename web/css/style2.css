@@ -1,0 +1,1182 @@
+.lessons__top{
+    min-height: calc(35vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* .banner{
+
+} */
+
+.banner_top{
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+/* При нажатии на .dropbtn или .dropSvg, отображаем .dropdown-content */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 35px;
+}
+
+/* Положение выпадающего меню */
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* При наведении курсора на ссылку в меню */
+.dropdownContent a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+
+.dropdown {
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.dropbtn,
+.dropSvg{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.dropbtn:hover{
+    color: #5c5c5e;
+}
+
+.banner__border{
+    border-bottom: 1px solid #5c5c5e;
+}
+
+.add-less-button {
+    display: block;  /* Сделать кнопку блочным элементом, чтобы они располагались одна под другой */
+    margin-bottom: 10px;  /* Расстояние между кнопками */
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;  /* Центрировать содержимое кнопки */
+}
+
+.add-less-button img {
+    display: block;
+    margin: 0 auto;  /* Центрировать изображение внутри кнопки */
+}
+
+.less_plus {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+/* lesson card */
+
+.lesson-cards {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на столбец */
+    align-items: center; /* Центрируем карточки по горизонтали */
+}
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 700px;
+    max-height: 250px;
+    min-height: 200px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.card--info {
+    margin-left: 20px;
+    padding-top: 20px;
+    position: relative; /* Настройка позиционирования контейнера */
+}
+
+.lesson--addToBookmarks {
+    position: absolute; /* Позиционирование иконки абсолютно внутри контейнера */
+    top: 20px; /* Положение сверху внутри контейнера */
+    right: 20px; /* Положение справа внутри контейнера */
+    cursor: pointer;
+}
+
+.lesson--addToBookmarks {
+    cursor: pointer;
+}
+
+.card--bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.bottom-1,
+.bottom-2 {
+    display: flex; /* Расположить элементы в строку */
+    align-items: center; /* Выровнять элементы по вертикали */
+}
+
+.bottom-1 img,
+.bottom-2 img,
+.bottom-1 p,
+.bottom-2 p {
+    margin-right: 5px; /* Небольшой отступ между иконкой и текстом */
+}
+
+.card--info a:hover{
+    color: #5c5c5e;
+}
+
+/* lesson card end */
+
+
+/* lesson */
+
+.lesson {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lesson__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson--video {
+    margin-bottom: 20px;
+}
+
+.lesson--content h2,p {
+    text-align: left;
+}
+
+.lesson--content p{
+    font-size: 20px;
+}
+
+.lesson--content h2{
+    font-size: 35px;
+}
+
+.video--name{
+    font-size: 25px;
+}
+.less__form {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MyriadPro-Light', sans-serif;
+}
+
+.category--form{
+    min-height: calc(55vh - 80px); !important;
+}
+
+.less__form input[type="text"],
+.less__form input[type="date"],
+.less__form textarea,
+.less__form button {
+    font-family: 'MyriadPro-Light', sans-serif;
+    font-size: 16px; /* Измените размер шрифта, если необходимо */
+}
+
+.less__form input[type="text"],
+.less__form input[type="date"],
+.less__form textarea{
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.less__form button {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.less__form button:hover {
+    background-color: #5c5c5e;
+}
+
+/* account */
+.account__main {
+    min-height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    max-width: 1220px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.account__left {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.account__right {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.account__left {
+
+    grid-column: 1 / 2;
+}
+
+.account__right {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.account__left h2, .account__right h2 {
+    margin-top: 0;
+}
+
+.account__left p {
+    margin: 10px 0;
+}
+
+.btn-acc
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: black;
+    padding: 10px 15px; /* Объединил padding */
+    min-width: 100px; /* Увеличил min-width, чтобы текст не обрезался */
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Добавил анимацию перехода */
+    /* text */
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-acc:hover {
+    background: white;
+    color: black;
+    border-color: black; /* Чтобы граница оставалась чёрной */
+
+}
+
+
+.btn-acc-form
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: black;
+    padding: 10px 15px; /* Объединил padding */
+    min-width: 100px; /* Увеличил min-width, чтобы текст не обрезался */
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Добавил анимацию перехода */
+    /* text */
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-acc-form:hover {
+    background: white;
+    color: black;
+    border-color: black; /* Чтобы граница оставалась чёрной */
+
+}
+
+
+.btn-acc-inc
+{
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: red;
+    padding: 10px 15px; /* Объединил padding */
+    min-width: 100px; /* Увеличил min-width, чтобы текст не обрезался */
+    border-radius: 20px;
+    border: 2px solid red;
+    transition: background-color 0.3s, color 0.3s; /* Добавил анимацию перехода */
+    /* text */
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-acc-inc:hover {
+    background: white;
+    color: black;
+    border-color: red; /* Чтобы граница оставалась чёрной */
+
+}
+
+.h-right,
+.h-left {
+    font-size: 50px;
+}
+
+.p-right {
+    font-size: 25px;
+    color: #5c5c5e;
+}
+
+.p-right span{
+    font-family: 'MyriadPro-Bold', sans-serif;
+    color: black;
+
+}
+
+
+
+.bottom-bookmark {
+    margin-top: 15px;
+}
+
+.bottom-bookmark:hover {
+    color: #5c5c5e;
+    text-decoration: underline;
+}
+
+
+/* account end */
+
+
+.site--error{
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* admin */
+
+.admin{
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на столбец */
+
+}
+
+.admin a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+}
+.admin a:hover{
+    color: #5c5c5e;
+}
+
+/*post*/
+
+.add-post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.post-cards {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на столбец */
+    align-items: center; /* Центрируем карточки по горизонтали */
+}
+
+.card-p{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 700px;
+    height: 200px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.post-card--info {
+    margin-left: 20px;
+    padding-top: 20px;
+    position: relative; /* Настройка позиционирования контейнера */
+}
+
+.post-card--bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.bottom-1,
+.bottom-2 {
+    display: flex; /* Расположить элементы в строку */
+    align-items: center; /* Выровнять элементы по вертикали */
+}
+
+.bottom-1 img,
+.bottom-2 img,
+.bottom-1 p,
+.bottom-2 p {
+    margin-right: 5px; /* Небольшой отступ между иконкой и текстом */
+}
+
+.bottom-visits,
+.bottom-date {
+    display: flex;
+    align-items: center;
+
+}
+.bottom-visits {
+    margin-right: 15px;
+}
+
+.post-plus {
+    margin-left: 15px;
+}
+
+.card--info a:hover{
+    color: #5c5c5e;
+}
+
+/*post top*/
+.lessons__top{
+    min-height: calc(35vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* .banner{
+
+} */
+
+.banner_top{
+    font-size: 70px;
+    margin-left: 15px;
+}
+
+/* При нажатии на .dropbtn или .dropSvg, отображаем .dropdown-content */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 35px;
+}
+
+/* Положение выпадающего меню */
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* При наведении курсора на ссылку в меню */
+.dropdownContent a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+
+.dropdown {
+    margin-right: 15px;
+    display: flex;
+    justify-content: right;
+    position: relative; /* Добавляем позиционирование */
+}
+
+.dropbtn,
+.dropSvg{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.dropbtn:hover{
+    color: #5c5c5e;
+}
+
+.banner__border{
+    border-bottom: 1px solid #5c5c5e;
+}
+
+/*category teg design*/
+
+/*pagination*/
+
+.page-container {
+       display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% высоты экрана */
+}
+
+.content {
+    flex: 1; /* Занимает оставшееся пространство */
+}
+
+.pagination-footer {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination-border {
+    width: 100%;
+    max-width: 1240px;
+    border-top: 1px solid #5c5c5e;
+    margin-bottom: 10px; /* Отступ снизу для разделения с кнопками пагинации */
+}
+
+.pagination {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование кнопок */
+    padding: 10px; /* Добавление внутреннего отступа */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.pagination li {
+    list-style: none; /* Убираем маркеры списка */
+    margin: 0 5px; /* Отступы между кнопками */
+}
+
+.pagination li a {
+    color: #000; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 15px; /* Внутренние отступы */
+    border-radius: 50%; /* Закругленные края */
+    transition: background-color 0.3s; /* Анимация изменения фона */
+}
+
+.pagination li a:hover {
+    background-color: #f0f0f0; /* Фон при наведении */
+}
+
+.pagination li.active a {
+    background-color: #5c5c5e; /* Фон активной страницы */
+    color: #fff; /* Цвет текста активной страницы */
+}
+
+
+/*comment*/
+
+.comments {
+    min-height: calc(65vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на столбец */
+    align-items: center; /* Центрируем карточки по горизонтали */
+}
+
+.comment {
+    position: relative; /* Добавляем позиционирование для контейнера комментария */
+    min-width: 550px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+
+/*comment Form*/
+.new-comment {
+    max-width: 1220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-comment h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.comment-textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.has-error .comment-textarea {
+    border-color: #d9534f;
+}
+
+.comment-textarea  {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+
+.field-newcomment-description .help-block {
+    display: none;
+}
+
+
+/*Post Create*/
+
+
+.post__form {
+    background-color: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: 'MyriadPro-Light', sans-serif;
+}
+
+.post__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post__form .form-group {
+    margin-bottom: 20px;
+}
+
+.post__form .form-group input,
+.post__form .form-group textarea,
+.post__form .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.post__form .form-group input:focus,
+.post__form .form-group textarea:focus,
+.post__form .form-group select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.post__form .form-group .btn-acc {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.post__form .form-group .btn-acc:hover {
+    background-color: #4cae4c;
+}
+
+.post__form .form-group .error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.post__mid {
+    display: flex;
+    justify-content: center;
+}
+
+/*category filter*/
+
+/*.category-filter {*/
+/*    margin: 20px 0;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.category-filter label {*/
+/*    margin-right: 10px;*/
+/*    font-size: 16px;*/
+/*    color: #333;*/
+/*}*/
+
+/*.category-filter select {*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 5px;*/
+/*    background-color: #fff;*/
+/*    transition: border-color 0.3s, box-shadow 0.3s;*/
+/*}*/
+
+/*.category-filter select:focus {*/
+/*    border-color: #66afe9;*/
+/*    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);*/
+/*    outline: none;*/
+/*}*/
+
+.card-c {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 1100px;
+    height: 450px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.course-image {
+    width: 40%;
+    object-fit: cover;
+}
+
+.course-card--info {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card--info h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.course-card--info p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.course-card--info p span {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.course-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+
+.course-card--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.card--info a:hover {
+    color: #5c5c5e;
+}
+
+.lessons__top {
+    min-height: calc(35vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.btn-tuls {
+    margin-left: 15px;
+}
+
+#category_id {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    margin-bottom: 25px;
+}
+
+#category_id:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    background-color: #fff;
+}
+
+#category_id option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-control:focus {
+    border-color: #66afe9 !important;
+    outline: none !important;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6) !important;
+    background-color: #fff !important;
+}
+
+
+.account-container {
+    position: relative;
+    display: inline-block;
+}
+
+.account-container .account--on {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.account-container .dropdown-menu-top {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.account-container .dropdown-menu-top a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.account-container .dropdown-menu-top a:hover {
+    background-color: #f1f1f1;
+}
+
+.account-container:hover .dropdown-menu-top {
+    display: block;
+}
+.menu__list {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+    padding: 10px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.submenu a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu__list:hover .submenu {
+    display: block;
+}
+
+.cookie-banner {
+    display: none; /* Скрыт по умолчанию */
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1000; /* Убедитесь, что баннер будет отображаться поверх других элементов */
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.btn-acc-form-cookie {
+    margin-top: 20px;
+    cursor: pointer;
+    background: black;
+    padding: 10px 15px;
+    min-width: 100px;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-acc-form-cookie:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.icon-container img {
+    width: 30px; /* Установите ширину иконки по вашему усмотрению */
+    height: auto; /* Позволяет иконке масштабироваться пропорционально ширине */
+}
+
+.btn-acc-form-cookie:hover {
+    background: white;
+    color: black;
+    border-color: black; /* Чтобы граница оставалась чёрной */
+
+}
+
+.btn-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещает элементы по краям контейнера */
+    margin-top: 10px; /* Дополнительный отступ, если нужно */
+}
+
+/* Иконка */
+.icon-container-metr_tuner {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icon-container-metr_tuner img {
+    width: 25px;
+    height: auto;
+}
+
+.course-price {
+    font-size: 18px; /* Размер текста */
+
+    color: #333; /* Цвет текста */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+.course-price span {
+    font-weight: 700;
+    font-size: 25px !important;
+}
+
+
+
+.form-control-file {
+    width: 100%; /* Ширина поля */
+    padding: 10px; /* Внутренний отступ */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 4px; /* Скругленные углы */
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); /* Тень */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Переходы */
+}
+
+.form-control-file:focus {
+    border-color: #66afe9; /* Цвет границы при фокусе */
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); /* Тень при фокусе */
+}
+
+
+.comments {
+    position: relative;
+}
+
+
+
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.delete-icon img {
+    width: 20px; /* Установите нужный размер иконки */
+    height: 20px; /* Установите нужный размер иконки */
+    transition: transform 0.3s; /* Плавный переход для анимации */
+}
+
+.delete-icon img:hover {
+    transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+
+
+/* Стили для политики конфиденциальности */
+.privacy-policy {
+    padding: 20px;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.privacy-policy h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #444;
+}
+
+.privacy-policy p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.privacy-policy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.privacy-policy ul li {
+    margin-bottom: 10px;
+}
+
+
+/*Post*/
+.post {
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sorted-asc::after {
+    content: ' ↑';
+}
+
+.sorted-desc::after {
+    content: ' ↓';
+}

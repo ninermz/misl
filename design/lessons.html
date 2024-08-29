@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../web/css/style.css">
+    <link rel="stylesheet" href="../web/css/style2.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a class="logo" href="#">
+                <img src="../web/images/svg/logo.svg" alt="">
+            </a>
+            <ul class="menu">
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link">Уроки</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link"> <span>Форум</span> </a>
+                </li>
+                <li class="menu__list">
+                    <a href="aboutUs.html" class="menu__link">О нас</a>
+                </li>
+            </ul>
+            <a class="account account--on" href="#">
+                <img src="../web/images/svg/account.svg" alt="">
+                <span>1</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- КОНТЕНТ -->
+
+<main class="main">
+    <section class="lessons__top">
+        <div class="banner">
+            <h1 class="banner_top">УРОКИ</h1>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn">Сортировать по
+            <img class="dropSvg" src="../web/images/svg/chevron-down.svg" alt="">
+            </button>
+            <div class="dropdownContent" id="dropdownContent">
+                <a href="#">Дате</a>
+                <a href="#">Посещаемости</a>
+              </div>
+        </div>
+        <div class="banner__border"></div>
+    </section>
+
+    <!-- КАРТОЧКА УРОКА -->
+    <section class="lesson-cards" id="lesson-cards">
+
+        <div class="lesson__card">
+            <!-- <div class="card--img">
+                <img class="card_img" src="images/lesson/lesson.jpg" alt="">
+            </div> -->
+            <div class="card">
+                <div class="card--info">
+                    <img class="lesson--addToBookmarks" src="../web/images/svg/bookmark.svg" alt="Добавить в избранное">
+                    <a href="lesson.html"><h1>Название урока</h1></a>
+                    <p>краткая информация о содержании урока</p>
+                </div>
+                <div class="card--bottom">
+                    <div class="bottom-1">
+                        <img class="lesson--popular" src="../web/images/svg/heart.svg" alt="">
+                        <p>1488</p>
+                    </div>
+                    <div class="bottom-2">
+                        <img class="lesson--date" src="../web/images/svg/calendar.svg" alt="">
+                        <p>12.12.12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+</main>
+
+
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Главная</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Уроки</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Форум</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">О нас</a>
+                    </li>
+                </ul>
+                <div class="footer__contacts">
+                    <a class="contact__youtube" href="#">
+                        <img src="../web/images/svg/youtube.svg" alt="">
+                    </a>
+                    <a class="contact__vk" href="#">
+                        <img src="../web/images/svg/vk.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="../web/JS/script.js"></script>
+
+</body>
+</html>

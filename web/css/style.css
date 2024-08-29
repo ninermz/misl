@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'MyriadPro-Reg', sans-serif;
+    src: url(/fonts/MYRIADPRO-REGULAR.OTF);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Light', sans-serif;
+    src: url(/fonts/MyriadPro-Light.otf);
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Bold', sans-serif;
+    src: url(/fonts/MYRIADPRO-SEMIBOLD.OTF);
+    font-style: normal;
+    font-weight: 700;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'MyriadPro-Reg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header{
+   background-color: white;
+   border-bottom: 1px solid #5c5c5e;
+   z-index: 10;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    gap: 0 90px;
+    padding: 0;
+}
+
+/* уведомления */
+.account{
+    position: relative;
+}
+
+.account--on span{
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -2px;
+    right: -7px;
+}
+/* gradient */
+.background {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    display: flex;
+    flex-grow: 1;
+    z-index: -10;
+}
+
+.background div {
+    position: absolute;
+    border-radius: 100%;
+    height: 0;
+    filter: blur(240vw);
+    opacity: 0.4;
+}
+
+.background div:nth-child(1) {
+    background: linear-gradient(132deg, #1FCFC3 0.00%, #1F91CF 100.00%);
+    width: 30%;
+    padding-top: 30%;
+    left: 20%;
+    top: 20%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(2) {
+    background: linear-gradient(132deg, #0800FF 0.00%, #E32BE3 100.00%);
+    width: 40%;
+    padding-top: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.background div:nth-child(3) {
+    background: linear-gradient(132deg, #1FCFC3 0.00%, #1F91CF 100.00%);
+    width: 30%;
+    padding-top: 30%;
+    left: 80%;
+    top: 80%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bg_gradient{
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* gradient end */
+
+.top{
+    min-height: calc(100vh - 80px);
+    background-image: url(../images/topimg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.title{
+    padding-top: 50px;
+    font-size: 70px;
+    /* margin-left: 10px;
+    margin-right: 400px; */
+    margin: 50px 400px 50px 10px;
+}
+
+.container__main{
+    max-width: 1220px;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+.subtitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.top__text{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.top__text span:hover{
+   color: #5c5c5e;
+}
+
+/* КНОПКА */
+.reg--btn {
+    margin-left: 10px;
+    cursor: pointer;
+    background: black;
+    padding: 10px 15px; /* Объединил padding */
+    min-width: 150px; /* Увеличил min-width, чтобы текст не обрезался */
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s, color 0.3s; /* Добавил анимацию перехода */
+/* text */
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+.reg--btn:hover {
+    background: white;
+    color: black;
+    border-color: black; /* Чтобы граница оставалась чёрной */
+/* text */
+    color: black;
+}
+
+
+/* ПОДВАЛ */
+.footer{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-top: 1px solid #5c5c5e;
+    border-bottom: 1px solid #5c5c5e;
+
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.footer__nav-list{
+    display: flex;
+    gap: 0 40px;
+    padding: 0;
+}
+
+.footer__contacts{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+ /* ССЫЛКИ НА ПОПУЛЯРНОЕ  */
+ .recom {
+    display: flex;
+    justify-content: center;
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* .recom__gallery {
+
+} */
+
+.recom__gallery-title{
+    margin-left: 10px ;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.recom__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.recom__list-item {
+    position: relative;
+    text-align: left;
+}
+
+/* .recom__img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+} */
+
+.recom__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recom__img-title {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent); */
+}
+
+.recom__img__title-link {
+
+    font-size: 30px;
+    font-family: 'MyriadPro-Light', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.recom__img__title-link:hover{
+    text-decoration: underline;
+
+}
+
+
+/* Log-Reg Form */
+.form-log-reg {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex; /* Размещаем содержимое в строку */
+    justify-content: space-between; /* Распределение элементов по ширине */
+    font-family: 'MyriadPro-Light', sans-serif;
+}
+
+
+
+.log__form {
+    background-color: white;
+    max-width: 700px;
+    max-height: 700px;
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+}
+
+.log__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.log__form .form-group {
+    margin-bottom: 20px;
+}
+
+.log__form label {
+    margin-bottom: 5px;
+}
+
+.log__form input[type="email"],
+.log__form .username-field,
+.log__form input[type="password"],
+.log__form textarea
+ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'MyriadPro-Light', sans-serif;
+    font-size: 16px;
+}
+
+.container__main-form{
+     max-width: 500px; /* Ширина формы, чтобы она была по центру */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.title-form{
+    padding-top: 10px;
+    font-size: 50px;
+    margin: 50px 0px 50px 0px;
+}
+/* Log-Reg Form end*/
+
+/* About Us */
+.aboutUs-top {
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+
+    background-image: url('../images/bgForm.png'); /* Замените путь_к_картинке.jpg на ваш путь к картинке */
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan {
+    font-size: 90px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutUs-mid{
+    min-height: calc(100vh - 80px);
+    max-width: 1220px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__aboutUs {
+    flex: 1;
+    display: flex;
+}
+
+.aboutUs-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-h{
+    font-size: 45px;
+    margin-top: auto;
+
+}
+
+.content-p{
+    font-size: 22px;
+}
+
+.aboutUs-image {
+    flex: 1;
+    /* здесь вы можете добавить стили для изображения */
+}
+
+/* Teachers */
+.teacher-up {
+    margin-bottom: 20px; /* Добавляем отступ снизу, чтобы заголовок не прилипал к карточкам */
+}
+
+.teachers {
+    min-height: calc(35vh - 80px);
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Изменяем направление на вертикальное */
+}
+
+.container__teachers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.teacher-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    /* здесь вы можете добавить стили для карточек преподавателей */
+}
+/* About Us end */
+
+
